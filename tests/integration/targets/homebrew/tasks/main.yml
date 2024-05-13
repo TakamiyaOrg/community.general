@@ -10,8 +10,8 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 - block:
-  - include_tasks: 'formulae.yml'
- 
+    - include_tasks: formulae.yml
+
 - when: ansible_distribution in ['MacOSX']
   block:
-    - include_tasks: 'casks.yml'
+    - include_tasks: casks.yml
